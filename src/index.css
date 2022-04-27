@@ -1,0 +1,55 @@
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+ 
+body {
+  padding: 60px;
+}
+ 
+input {
+  font-size: 1.2rem;
+  width: 100%;
+  color: grey;
+}
+ 
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ 
+.card {
+  display: flex;
+  width: 30rem;
+  margin: 10px;
+  height: 20rem;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0.1rem 0.1rem 0.1rem #aaa;
+  border: 1px solid grey;
+  border-radius: 10px;
+  overflow: hidden;
+  transform: rotateY(20deg);
+  transition: all 0.5s;
+}
+ 
+.card:hover {
+  transform: rotateY(20deg) translateY(-0.5rem);
+  box-shadow: 0.5rem 0.5rem 0.5rem #aaa;
+}
+ 
+.card p {
+    color: rgb(115, 213, 115);
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+ 
+.card img {
+  height: 80%;
+  width: 100%;
+}
